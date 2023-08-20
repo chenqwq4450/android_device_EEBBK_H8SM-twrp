@@ -30,8 +30,8 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x08f88000 --tags_offset 0x0df88000
 
 # Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x1000000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x1000000
+#BOARD_BOOTIMAGE_PARTITION_SIZE := 0x1000000
+#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x1000000
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
@@ -66,8 +66,8 @@ TW_CRYPTO_USE_SYSTEM_VOLD := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_DEFAULT_BRIGHTNESS := 128
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-#TW_DEFAULT_LANGUAGE := zh_CN
-#TW_EXTRA_LANGUAGES := true
+TW_DEFAULT_LANGUAGE := zh_CN
+TW_EXTRA_LANGUAGES := true
 
 # Very important for this device
 TW_IGNORE_MISC_WIPE_DATA := true
